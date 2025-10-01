@@ -110,3 +110,16 @@ FINNHUB_API_KEY (optional, for primary news source)
  Extended KPI dashboard (response time, model costs)
 
  Export to PDF & Excel for institutional workflows
+
+
+
+gic_research/
+│
+├── multi_agent.py         # 核心后端 — 定义 Orchestrator 和 5 个 Agents
+├── research_console.py    # 前端 UI (Streamlit) — 调用 multi_agent
+├── requirements.txt       # 依赖清单
+├── README.md              # 使用说明（运行方法、环境变量）
+│
+├── .cache/                # 本地缓存（FAISS 索引、Redis 可选）
+├── logs/                  # 日志输出（可选）
+└── pdfs/                  # 本地 10-K / 10-Q / 研究文档
